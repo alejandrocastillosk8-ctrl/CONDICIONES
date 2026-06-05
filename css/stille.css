@@ -1,0 +1,126 @@
+
+.interface-container {
+    display: grid;
+    grid-template-columns: 250px 1fr;   
+    grid-template-rows: auto 1fr auto;   
+    grid-template-areas:
+        "header header"
+        "aside main"
+        "footer footer";
+    min-height: 100vh;
+}
+
+
+.header {
+    grid-area: header;
+    background-color: #1a365d; 
+    color: white;
+    font-size: 1.8rem;
+    font-weight: bold;
+    letter-spacing: 1px; 
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer {
+    grid-area: footer;
+    background-color: #f4f4f4; 
+    color: #666;
+    font-size: 0.9rem;
+    padding: 15px;
+    border-top: 1px solid #ddd;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.aside { 
+    grid-area: aside; 
+    display: flex;
+    flex-direction: column;
+    gap: 15px; /
+    padding: 20px;
+}
+
+.product-zone { 
+    grid-area: main; 
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); 
+    gap: 30px; 
+    padding: 30px;
+}
+
+
+
+
+
+.produc-card {
+    display: flex;
+    flex-direction: column; 
+    align-items: center;    
+    padding: 15px;
+    border: 1px solid #ddd; 
+    background-color: #fff;
+    border-radius: 4px;     
+    height: 100%;           
+    width: 100%;           
+    box-sizing: border-box; 
+}
+
+
+.product-img {
+    width: 200px;           
+    height: 200px;          
+    display: block;         
+    margin: 0 auto 15px;   
+    object-fit: contain;    
+    object-position: center; 
+}
+    
+
+.buy-btn {
+    margin-top: auto;       
+    width: 100%;          
+    padding: 10px;
+    background-color: #1a365d; /
+    border: none;
+    cursor: pointer;
+}
+
+
+.aside h2 {
+    font-size: 1.2rem;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+
+.Categorias-itens {
+    display: flex;
+    flex-direction: column;
+    gap: 12px; 
+}
+
+
+.Categorias-itens a {
+    text-decoration: none; 
+    color: #555;
+    font-size: 1rem;
+    transition: color 0.2s;
+}
+
+
+.Categorias-itens a:hover {
+    color: #1a365d; 
+    font-weight: bold;
+}
+
+
+.Categorias-itens span {
+    color: #888;
+    font-size: 0.85rem;
+    margin-left: 5px;
+}
