@@ -1,0 +1,139 @@
+/* Reset general para limpiar márgenes por defecto */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Centrar el contenido en la pantalla */
+body {
+    background-color: #f4f7f6;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    gap: 20px;
+    padding: 20px;
+}
+
+/* Contenedor de la Tarjeta de Producto */
+.card {
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 350px;
+    padding: 24px;
+    text-align: center;
+    transition: transform 0.2s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px); /* Efecto sutil al pasar el mouse */
+}
+
+/* Imagen del Producto */
+.card img {
+    width: 100%;
+    height: auto;
+    max-height: 200px;
+    object-fit: contain;
+    margin-bottom: 16px;
+    border-radius: 8px;
+}
+
+/* Texto del Nombre del Producto */
+.card p:first-of-type {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #333333;
+    margin-bottom: 8px;
+}
+
+/* Texto del Precio Base */
+.card p:nth-of-type(2) {
+    font-size: 1.1rem;
+    color: #666666;
+    margin-bottom: 20px;
+}
+
+/* Contenedor de Controles (Cantidad y Botones) */
+.controles {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    margin-top: 15px;
+    background-color: #f9f9f9;
+    padding: 10px;
+    border-radius: 8px;
+}
+
+.controles span {
+    font-size: 1rem;
+    font-weight: 500;
+    color: #444444;
+}
+
+#cantidad {
+    font-weight: bold;
+    min-width: 20px;
+}
+
+
+.controles button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    font-size: 1.2rem;
+    font-weight: bold;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.2s, transform 0.1s;
+}
+
+.controles button:hover {
+    background-color: #0056b3;
+}
+
+.controles button:active {
+    transform: scale(0.95); 
+}
+
+
+#btn-restar {
+    background-color: #6c757d;
+}
+
+#btn-restar:hover {
+    background-color: #5a6268;
+}
+
+
+.total-seccion {
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+    width: 100%;
+    max-width: 350px;
+    padding: 16px;
+    text-align: center;
+    border-left: 5px solid #28a745;
+}
+
+.total-seccion h2 {
+    font-size: 1.3rem;
+    color: #333333;
+}
+
+#total-pagar {
+    color: #28a745; 
+    font-weight: 700;
+}
